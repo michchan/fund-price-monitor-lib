@@ -1,0 +1,31 @@
+{
+  "name": "@michchan/fund-price-monitor-lib",
+  "version": "0.1.0",
+  "description": "Shared library for fundprice-monitor app",
+  "main": "dist/index.js",
+  "types": "dist/index.d.ts",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "build": "tsc",
+    "clear-build-cache": "rm -rf dist",
+    "eslint": "eslint --ext .js,.jsx,.ts,.tsx .",
+    "eslint:fix": "npm run eslint -- --fix",
+    "watch": "tsc --watch --noemit"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/michchan/fund-price-monitor-lib.git"
+  },
+  "author": "Michael Chan",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/michchan/fund-price-monitor-lib/issues"
+  },
+  "homepage": "https://github.com/michchan/fund-price-monitor-lib#readme",
+  "devDependencies": {
+    "@michchan/eslint-config": "^1.8.0",
+    "aws-sdk": "^2.884.0",
+    "eslint": "^7.24.0",
+    "typescript": "^4.2.4"
+  }
+}
