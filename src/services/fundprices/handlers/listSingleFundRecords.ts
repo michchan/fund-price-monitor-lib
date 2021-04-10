@@ -1,15 +1,15 @@
 import { DocumentClient } from 'aws-sdk/clients/dynamodb'
-import { FundPriceRecord, CompanyType, FundType, RecordType } from '../../../models/fundPriceRecord/FundPriceRecord.type'
+import { CompanyType, FundType, RecordType, FundPriceRecordWithDetails } from '../../../models/fundPriceRecord/FundPriceRecord.type'
 import { ListResponse } from '../Responses.type'
 
 export type ListSingleFundRecordsResponse <
   FT extends FundType = FundType,
   RT extends RecordType = RecordType
-> = ListResponse<FundPriceRecord<FT, RT>>
+> = ListResponse<FundPriceRecordWithDetails<FT, RT>>
 
 export interface ListSingleFundRecordsPathParams {
   company: CompanyType;
-  code: FundPriceRecord['code'];
+  code: FundPriceRecordWithDetails['code'];
 }
 
 export interface ListSingleFundRecordsQueryParams {

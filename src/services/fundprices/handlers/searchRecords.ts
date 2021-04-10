@@ -1,11 +1,11 @@
 import { DocumentClient } from 'aws-sdk/clients/dynamodb'
-import { FundPriceRecord, FundType, RecordType } from '../../../models/fundPriceRecord/FundPriceRecord.type'
+import { FundPriceRecordWithDetails, FundType, RecordType } from '../../../models/fundPriceRecord/FundPriceRecord.type'
 import { ListResponse } from '../Responses.type'
 
 export type SearchRecordsResponse <
   FT extends FundType = FundType,
   RT extends RecordType = RecordType
-> = ListResponse<FundPriceRecord<FT, RT>>
+> = ListResponse<FundPriceRecordWithDetails<FT, RT>>
 
 export interface SearchRecordsQueryParams {
   latest?: boolean;
