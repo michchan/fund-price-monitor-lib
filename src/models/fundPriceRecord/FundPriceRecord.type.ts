@@ -12,6 +12,7 @@ export type RiskLevel =
   | 'neutral'
   | 'high'
   | 'veryHigh'
+  | 'unknown'
 
 export type RecordType =
   | 'latest'
