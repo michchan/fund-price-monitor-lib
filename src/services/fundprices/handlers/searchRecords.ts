@@ -9,6 +9,7 @@ export type SearchRecordsResponse <
 
 export interface SearchRecordsQueryParams {
   latest?: boolean;
+  all?: boolean;
   exclusiveStartKey?: DocumentClient.QueryInput['ExclusiveStartKey'];
   q?: string;
   /** Format: YYYY.(1|2|3|4) */

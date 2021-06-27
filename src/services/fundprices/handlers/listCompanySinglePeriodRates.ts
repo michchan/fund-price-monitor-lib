@@ -15,5 +15,6 @@ export type ListCompanySinglePeriodRatesPathParams = {
   [key in AggregatedRecordType]: string
 }
 export interface ListCompanySinglePeriodRatesQueryParams {
+  all?: boolean;
   exclusiveStartKey?: DocumentClient.QueryInput['ExclusiveStartKey'];
 }

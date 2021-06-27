@@ -14,6 +14,7 @@ export interface ListSingleFundRecordsPathParams {
 
 export interface ListSingleFundRecordsQueryParams {
   latest?: boolean;
+  all?: boolean;
   exclusiveStartKey?: DocumentClient.QueryInput['ExclusiveStartKey'];
   /** ISO timestamp */
   startTime?: string;

@@ -13,6 +13,7 @@ export interface ListCompanyRecordsPathParams {
 export interface ListCompanyRecordsQueryParams {
   riskLevel?: RiskLevel;
   latest?: boolean;
+  all?: boolean;
   exclusiveStartKey?: DocumentClient.QueryInput['ExclusiveStartKey'];
   /** Format: YYYY.(1|2|3|4) */
   quarter?: string;
