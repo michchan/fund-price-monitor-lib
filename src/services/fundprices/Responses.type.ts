@@ -3,8 +3,9 @@ import { DocumentClient } from 'aws-sdk/clients/dynamodb'
 
 export interface ListSuccessResponse <T> {
   result: true;
-  data: T[];
+  length: number;
   lastEvaluatedKey: null | DocumentClient.QueryOutput['LastEvaluatedKey'];
+  data: T[];
 }
 
 export interface ListErrorResponse {
