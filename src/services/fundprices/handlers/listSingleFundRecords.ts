@@ -20,4 +20,9 @@ export interface ListSingleFundRecordsQueryParams {
   startTime?: string;
   /** ISO timestamp */
   endTime?: string;
+  /**
+   * Format: `YYYY.nthQuarter`
+   * It must be the same quarter as `startTime` and/or `endTime` (if defined).
+   */
+  quarter?: string;
 }
