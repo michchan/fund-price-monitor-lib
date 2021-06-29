@@ -17,4 +17,5 @@ export type ListCompanySinglePeriodRatesPathParams = {
 export interface ListCompanySinglePeriodRatesQueryParams {
   all?: boolean;
   exclusiveStartKey?: DocumentClient.QueryInput['ExclusiveStartKey'];
+  code?: string;
 }
