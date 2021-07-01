@@ -1,3 +1,4 @@
+export * from './listCompanies'
 export * from './listCompanyRecords'
 export * from './listCompanySinglePeriodRates'
 export * from './listQuarters'
