@@ -12,6 +12,9 @@ export interface SearchRecordsQueryParams {
   all?: boolean;
   exclusiveStartKey?: DocumentClient.QueryInput['ExclusiveStartKey'];
   q?: string;
-  /** Format: YYYY.(1|2|3|4) */
+  /**
+   * Format: YYYY.(1|2|3|4)
+   * Default to current quarter.
+   */
   quarter?: string;
 }
