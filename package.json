@@ -4,16 +4,21 @@
   "description": "Shared library for fundprice-monitor app",
   "main": "dist/index.js",
   "types": "dist/index.d.ts",
+  "engines": {
+    "node": ">=16.0.0",
+    "npm": "please-use-yarn",
+    "yarn": ">= 1.22.0"
+  },
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1",
     "build": "tsc",
     "clear-build-cache": "rm -rf dist",
     "eslint": "eslint --ext .js,.jsx,.ts,.tsx .",
-    "eslint-fix": "npm run eslint -- --fix",
+    "eslint-fix": "yarn run eslint -- --fix",
     "index": "ts-node scripts/generateExports && ts-node scripts/generateIndex",
-    "index-commit": "npm run index && git add . && git commit -m \"Update index files\"",
+    "index-commit": "yarn run index && git add . && git commit -m \"Update index files\"",
     "tag": "git tag v$(node -pe 'require(\"./package.json\").version')",
-    "watch": "tsc --watch --noemit",
+    "tsc-watch": "tsc --watch --noemit",
     "release": "standard-version --ignore-path .gitignore --commit-hook false"
   },
   "repository": {
