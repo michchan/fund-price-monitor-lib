@@ -14,7 +14,7 @@
     "build": "tsc",
     "clear-build-cache": "rm -rf dist",
     "lint": "eslint --ext .js,.jsx,.ts,.tsx .",
-    "lint-fix": "yarn run eslint -- --fix",
+    "lint-fix": "yarn run lint -- --fix",
     "index": "ts-node scripts/generateExports && ts-node scripts/generateIndex",
     "index-commit": "yarn run index && git add . && git commit -m \"Update index files\"",
     "tag": "git tag v$(node -pe 'require(\"./package.json\").version')",
