@@ -1,6 +1,9 @@
 import { CompanyType, FundType, RiskLevel } from './FundPriceRecord.type'
 
-export type Languages = 'en' | 'zh_HK'
+export enum Languages {
+  en = 'en',
+  zh_HK ='zh_HK'
+}
 
 export interface FundDetails <FT extends FundType = FundType> {
   company: CompanyType;

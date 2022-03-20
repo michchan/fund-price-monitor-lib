@@ -1,10 +1,11 @@
 import { FundDetails } from './FundDetails.type'
 import { FundPriceRecord, FundType } from './FundPriceRecord.type'
 
-export type AggregatedRecordType =
-  | 'week'
-  | 'month'
-  | 'quarter'
+export enum AggregatedRecordType {
+  week = 'week',
+  month = 'month',
+  quarter = 'quarter'
+}
 
 export interface FundPriceChangeRate <
   FT extends FundType = FundType,

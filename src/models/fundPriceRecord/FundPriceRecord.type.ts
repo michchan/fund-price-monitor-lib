@@ -1,22 +1,27 @@
 import { FundDetails } from './FundDetails.type'
 
-export type FundType = 'mpf'
+export enum FundType {
+  mpf = 'mpf'
+}
 
-export type CompanyType =
-  | 'manulife'
-  | 'aia'
+export enum CompanyType {
+  manulife = 'manulife',
+  aia = 'aia'
+}
 
-export type RiskLevel =
-  | 'veryLow'
-  | 'low'
-  | 'neutral'
-  | 'high'
-  | 'veryHigh'
-  | 'unknown'
+export enum RiskLevel {
+  veryLow = 'veryLow',
+  low = 'low',
+  neutral = 'neutral',
+  high = 'high',
+  veryHigh = 'veryHigh',
+  unknown = 'unknown'
+}
 
-export type RecordType =
-  | 'latest'
-  | 'record'
+export enum RecordType {
+  latest = 'latest',
+  record = 'record'
+}
 
 /**
  * A scrape record of the fundprice
