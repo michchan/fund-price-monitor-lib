@@ -37,9 +37,14 @@ export interface FundPriceRecord <
   updatedDate: string;
   /** Unit price in HKD */
   price: number;
+  /**
+   * Risk level needs to be here other than in FundDetails,
+   * because an index on Dynamodb depends on RiskLevel
+   */
   riskLevel: RiskLevel;
   /** Record time in ISO timestamp */
   time: string;
+  // @TODO: Investigate if fundType is needed here
   fundType: FT;
   recordType: RT;
   /** --------- 'latest' fields --------- */
