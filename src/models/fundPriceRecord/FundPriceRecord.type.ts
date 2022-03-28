@@ -6,7 +6,8 @@ export enum FundType {
 
 export enum CompanyType {
   manulife = 'manulife',
-  aia = 'aia'
+  aia = 'aia',
+  hsbc = 'hsbc'
 }
 
 export enum RiskLevel {
