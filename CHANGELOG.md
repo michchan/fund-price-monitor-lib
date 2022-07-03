@@ -2,6 +2,13 @@
 
 All notable changes to this project will be documented in this file. See [standard-version](https://github.com/conventional-changelog/standard-version) for commit guidelines.
 
+## [0.11.0](https://github.com/michchan/fund-price-monitor-lib/compare/v0.10.0...v0.11.0) (2022-07-03)
+
+
+### Bug Fixes
+
+* result type to be dynamic ([5d5717b](https://github.com/michchan/fund-price-monitor-lib/commit/5d5717b46d89b07428f2569ce75095a36b429eb7))
+
 ## [0.10.0](https://github.com/michchan/fund-price-monitor-lib/compare/v0.9.2...v0.10.0) (2022-03-28)
 
 
