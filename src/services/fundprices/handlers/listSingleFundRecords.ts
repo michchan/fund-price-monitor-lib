@@ -12,9 +12,17 @@ export interface ListSingleFundRecordsPathParams {
   code: FundPriceRecordWithDetails['code'];
 }
 
-export type ListSingleFundRecordsTenor = 'latest' | '1m' | '6m' | '1y' | '3y' | '5y' | 'all'
+export enum ListSingleFundRecordsTenor {
+  latest = 'latest',
+  oneMonth = '1m',
+  sixMonths = '6m',
+  oneYear = '1y',
+  threeYears = '3y',
+  fiveYears = '5y',
+  all = 'all'
+}
 
 export interface ListSingleFundRecordsQueryParams {
-  tenor: ListSingleFundRecordsTenor;
+  tenor?: ListSingleFundRecordsTenor;
   exclusiveStartKey?: DocumentClient.QueryInput['ExclusiveStartKey'];
 }
