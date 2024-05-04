@@ -12,17 +12,9 @@ export interface ListSingleFundRecordsPathParams {
   code: FundPriceRecordWithDetails['code'];
 }
 
+export type ListSingleFundRecordsTenor = 'latest' | '1m' | '6m' | '1y' | '3y' | '5y' | 'all'
+
 export interface ListSingleFundRecordsQueryParams {
-  latest?: boolean;
-  all?: boolean;
+  tenor: ListSingleFundRecordsTenor;
   exclusiveStartKey?: DocumentClient.QueryInput['ExclusiveStartKey'];
-  /** ISO timestamp */
-  startTime?: string;
-  /** ISO timestamp */
-  endTime?: string;
-  /**
-   * Format: `YYYY.(1|2|3|4)`
-   * It must be the same quarter as `startTime` and/or `endTime` (if defined).
-   */
-  quarter?: string;
 }
