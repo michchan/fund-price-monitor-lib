@@ -2,6 +2,13 @@
 
 All notable changes to this project will be documented in this file. See [standard-version](https://github.com/conventional-changelog/standard-version) for commit guidelines.
 
+### [0.13.1](https://github.com/michchan/fund-price-monitor-lib/compare/v0.13.0...v0.13.1) (2024-05-04)
+
+
+### Features
+
+* Make tenor type optional and fix type ([3697fdd](https://github.com/michchan/fund-price-monitor-lib/commit/3697fddd764fdd7bc28c655a59e5b979c83f153d))
+
 ## [0.13.0](https://github.com/michchan/fund-price-monitor-lib/compare/v0.12.0...v0.13.0) (2024-05-04)
 
 
